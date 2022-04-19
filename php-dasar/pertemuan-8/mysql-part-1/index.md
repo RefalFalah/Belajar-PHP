@@ -3,6 +3,7 @@ Perintah :
 ```
 SHOW DATABASES;
 ```
+<img src="https://media.discordapp.net/attachments/868319460216434728/965778333390475274/InShot_20220419_073806305.jpg" alt="SHOW DATABASES;" />
 ### Membuat DATABASE Baru
 Perintah :
 ```
