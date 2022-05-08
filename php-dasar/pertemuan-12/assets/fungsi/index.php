@@ -83,7 +83,7 @@
                     nis LIKE '%$keyword%' OR
                     nama LIKE '%$keyword%' OR
                     kelas LIKE '%$keyword%' OR
-                    jurusan LIKE '%jurusan%'";
+                    jurusan LIKE '%$keyword%'";
         return query($query);
     }
 ?>

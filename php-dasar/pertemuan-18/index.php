@@ -9,12 +9,13 @@
     if (!isset($_SESSION["login"])) {
         header("Location : assets/login/index.php");
     }
+    
     // pagination
     $jumlahDataHalaman = 2;
     $jumlahData = count(query("SELECT * FROM students"));
     $jumlahHalaman = ceil($jumlahData/$jumlahDataHalaman);
     $halamanAktif = (isset($_GET["halaman"])) ? $_GET["halaman"] : 1;
-    $awalData = ($jumlahHalaman * $halamanAktif) - $jumlahDataHalaman;
+    $awalData = ($jumlahDataHalaman * $halamanAktif) - $jumlahDataHalaman;
     
     // query data
     $students = query ("SELECT * FROM students LIMIT $awalData, $jumlahDataHalaman");
