@@ -8,7 +8,6 @@
                $harga;
         
         // constructor method
-
         public function __construct($judul = "Judul", $penulis = "Penulis", $penerbit = "Penerbit", $harga = 0) {
             $this->judul =  $judul;
             $this->penulis = $penulis;
