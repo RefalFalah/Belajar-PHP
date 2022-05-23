@@ -20,7 +20,7 @@
     
     // cek session
     if (isset($_SESSION["login"])) {
-        header("Location : ../../index.php");
+        header('Location: ../../');
         exit;
     }
     
@@ -43,7 +43,7 @@
                     setcookie("id", $row["id"], time() + 60, "/", "localhost", 1);
                     setcookie("key", hash("sha256", $row["username"]), time() + 60, "/", "localhost", 1);
                 }
-                header('Location : ../../index.php');
+                header('Location: ../../');
                 exit;
             }
         }

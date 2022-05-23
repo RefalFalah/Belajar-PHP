@@ -170,7 +170,7 @@
         // enkripsi password
         $password = password_hash($password, PASSWORD_DEFAULT);
         // tambahkan user baru ke dalam database
-        mysqli_query($conn, "INSERT INTO users VALUES ('', '$username', '$password')");
+        mysqli_query($conn, "INSERT INTO users VALUES (0, '$username', '$password')");
         
         return mysqli_affected_rows($conn);
     }

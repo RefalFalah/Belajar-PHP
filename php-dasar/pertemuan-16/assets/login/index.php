@@ -1,10 +1,10 @@
 <?php
     // menjalankan session
     session_start();
-    
+
     // cek session
     if (isset($_SESSION["login"])) {
-        header("Location : ../../index.php");
+        header('Location: ../../');
         exit;
     }
     
@@ -24,7 +24,7 @@
             if (password_verify($password, $row["password"])) {
                 // set session
                 $_SESSION["login"] = true;
-                header('Location : ../../index.php');
+                header('Location: ../../');
                 exit;
             }
         }

@@ -4,7 +4,8 @@
     
     // cek ada session nya tidak
     if (!isset($_SESSION["login"])) {
-        header("Location : assets/login/index.php");
+        header('Location: assets/login/');
+        exit;
     }
     
     // menghubungkan ke file fungsi

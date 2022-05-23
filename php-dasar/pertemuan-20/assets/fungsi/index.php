@@ -39,7 +39,7 @@
         $jurusan = htmlspecialchars($data["jurusan"]);
         // query
         $query = "INSERT INTO students VALUES
-                  ('', '$poto', '$nis', '$nama', '$kelas', '$jurusan')";
+                  (0, '$poto', '$nis', '$nama', '$kelas', '$jurusan')";
         // insert data ketabel students
         mysqli_query($conn, $query);
         
